@@ -1,25 +1,26 @@
 @import "tailwindcss";
 
+/* Prevent browser from auto-applying dark colors */
+:root {
+  color-scheme: light;
+}
+
 /* GLOBAL RESET */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: white;
+  color: #111827;
 }
 
-/* BASE BODY STYLE (TAILWIND WILL HANDLE DARK MODE AUTOMATICALLY) */
+/* BASE BODY STYLE */
 body {
-  @apply bg-white text-black transition-colors duration-300;
+  @apply bg-white text-gray-900 transition-colors duration-300;
 }
 
-/* DARK MODE OVERRIDE (TAILWIND MEDIA MODE) */
-@media (prefers-color-scheme: dark) {
-  body {
-    @apply bg-black text-white;
-  }
-}
-
-/* WHATSAPP FLOAT ANIMATION */
+/* WhatsApp Animation */
 @keyframes floatUp {
   0% {
     transform: translateY(10px);

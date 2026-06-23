@@ -28,7 +28,6 @@ export default function HeroSlider() {
   return (
     <div className="relative w-full h-screen overflow-hidden">
 
-      {/* Images */}
       {images.map((img, index) => (
         <div
           key={index}

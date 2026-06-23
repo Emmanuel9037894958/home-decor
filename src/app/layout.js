@@ -25,12 +25,14 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-white text-gray-900">
         <GlobalLoader />
         <WhatsAppFloat />
-        <main className="flex-grow">{children}</main>
-
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
