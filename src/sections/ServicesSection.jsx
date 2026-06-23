@@ -63,7 +63,7 @@ const images = [
 
 export default function ServicesPage() {
   return (
-    <main className="pt-10 xl:pt-28 pb-20 bg-[#f8f5f0]">
+    <main className="pt-1 xl:pt-28 pb-20 bg-[#f8f5f0]">
 
       {/* HERO TEXT */}
       <section className="text-center max-w-4xl mx-auto px-6">
@@ -71,7 +71,7 @@ export default function ServicesPage() {
           Our Services
         </p>
 
-        <h1 className="mt-4 text-4xl md:text-6xl font-bold text-gray-900">
+        <h1 className="mt-4 text-2xl md:text-6xl font-bold text-gray-900">
           Interior Solutions Designed For You
         </h1>
 
